@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "EforMeSDKWrapper",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v16)
     ],
     products: [
         .library(
