@@ -22,10 +22,10 @@ let package = Package(
         .package(url: "https://github.com/adobe/aepsdk-analytics-ios.git", exact: "5.0.2"),
 
         // Amplify
-        .package(url: "https://github.com/aws-amplify/amplify-swift.git", exact: "2.51.1"),
+        //.package(url: "https://github.com/aws-amplify/amplify-swift.git", exact: "2.51.1"),
 
         // Google Maps
-        .package(url: "https://github.com/googlemaps/ios-maps-sdk.git", exact: "9.0.0")
+       // .package(url: "https://github.com/googlemaps/ios-maps-sdk.git", exact: "9.0.0")
     ],
     targets: [
         // Your XCFramework
@@ -48,11 +48,11 @@ let package = Package(
                 .product(name: "AEPAnalytics", package: "aepsdk-analytics-ios"),
                 
                 // Amplify
-                .product(name: "Amplify", package: "amplify-swift"),
+               // .product(name: "Amplify", package: "amplify-swift"),
 
     
                 // Google Maps
-                .product(name: "GoogleMaps", package: "ios-maps-sdk")
+                //.product(name: "GoogleMaps", package: "ios-maps-sdk")
             ],
             path: "Sources/EforMeSDKWrapper",
             resources: [
