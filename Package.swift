@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "EforMeSDKWrapper",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v16)
     ],
     products: [
         .library(
@@ -50,9 +50,7 @@ let package = Package(
                 // Amplify
                 .product(name: "Amplify", package: "amplify-swift"),
 
-                // Razorpay
-                .product(name: "Razorpay", package: "razorpay-pod"),
-
+    
                 // Google Maps
                 .product(name: "GoogleMaps", package: "ios-maps-sdk")
             ],
