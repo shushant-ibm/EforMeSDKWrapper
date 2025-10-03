@@ -1,0 +1,69 @@
+{
+    "defaultEnv": "qa",
+    
+    "envs": {
+        
+        "dev": {
+            "APIBaseURL": "https://eopglggi2j.execute-api.ap-south-1.amazonaws.com/mobilegtw/v1/",
+            "WebBaseURL": "https://wallet-dev.evmsil.in/launchWallet",
+            "TermsAndConditionsURL": "https://privacy-policy.com",
+            "PrivacyPolicyURL": "https://www.marutisuzuki.com/privacy-policy",
+            "GoogleAPIKey": "AIzaSyAlI9TPUuFR8KNtP6qdbAC4mYHjFuJJp2M",
+            "XAPIKey": "1ab2c3d4e5f61ab2c3d4e5f6fo5vOmv2h0Rb0dykHk9PD3mvob2EJFbz4cg2tuBF",
+            "XAPIKeySDK": "6907a3a38f5286395768e682b105eb3c270d6e5b06d38ebb3221fbceb5e53b85",
+            "OAUTHKey": "CD%3Wgdrtx7zZ1fLNbXZq#S@RTYij9hP",
+            "DecryptionKey": "33DEk7$BM3f0!Sv&QSsX9L@VDEk7$BM3",
+            "LocalHash": "Ezlui6sP4aIqvfWuJHH5f1Pma4mfIP2S+HklTXi3DI8=",
+            "PPIM": "ppimsil",
+            "PTMS": "ptmsil"
+        },
+        
+        "qa": {
+            "APIBaseURL": "https://qa.evmsil.in/mobilegtw/v1/",
+            "WebBaseURL": "https://wallet-qa.evmsil.in/launchWallet",
+            "TermsAndConditionsURL": "https://privacy-policy.com",
+            "PrivacyPolicyURL": "https://www.marutisuzuki.com/privacy-policy",
+            "GoogleAPIKey": "AIzaSyAlI9TPUuFR8KNtP6qdbAC4mYHjFuJJp2M",
+            "XAPIKey": "1ab2c3d4e5f61ab2c3d4e5f6fo5vOmv2h0Rb0dykHk9PD3mvob2EJFbz4cg2tuBF",
+            "XAPIKeySDK": "0f355811ee3bc1e22f9dd7a5a121d73b19cb7b0af05a4a225e783a86766eb683",
+            "OAUTHKey": "CD%3Wgdrtx7zZ1fLNbXZq#S@RTYij9hP",
+            "DecryptionKey": "33DEk7$BM3f0!Sv&QSsX9L@VDEk7$BM3",
+            "LocalHash": "Ezlui6sP4aIqvfWuJHH5f1Pma4mfIP2S+HklTXi3DI8=",
+            "PPIM": "ppimsil",
+            "PTMS": "ptmsil"
+        },
+        
+        "preprod": {
+            "APIBaseURL": "https://preprod.evmsil.in/mobilegtw/v1/",
+            "WebBaseURL": "https://wallet-preprod.evmsil.in/launchWallet",
+            "TermsAndConditionsURL": "https://privacy-policy.com",
+            "PrivacyPolicyURL": "https://www.marutisuzuki.com/privacy-policy",
+            "GoogleAPIKey": "AIzaSyAlI9TPUuFR8KNtP6qdbAC4mYHjFuJJp2M",
+            "XAPIKey": "1ab2c3d4e5f61ab2c3d4e5f6fo5vOmv2h0Rb0dykHk9PD3mvob2EJFbz4cg2tuBF",
+            "XAPIKeySDK": "0f355811ee3bc1e22f9dd7a5a121d73b19cb7b0af05a4a225e783a86766eb683",
+            "OAUTHKey": "CD%3Wgdrtx7zZ1fLNbXZq#S@RTYij9hP",
+            "DecryptionKey": "33DEk7$BM3f0!Sv&QSsX9L@VDEk7$BM3",
+            "LocalHash": "Ezlui6sP4aIqvfWuJHH5f1Pma4mfIP2S+HklTXi3DI8=",
+            "PPIM": "ppimsil",
+            "PTMS": "ptmsil"
+        },
+        
+        "prod": {
+            "APIBaseURL": "https://evmsil.in/mobilegtw/v1/",
+            "WebBaseURL": "https://wallet.evmsil.in/launchWallet",
+            "TermsAndConditionsURL": "https://privacy-policy.com",
+            "PrivacyPolicyURL": "https://www.marutisuzuki.com/privacy-policy",
+            "GoogleAPIKey": "AIzaSyAQ4ZsCp6pGDHLFH7TMXcC0zETj8srjV6s",
+            "XAPIKey": "1ab2c3d4e5f61ab2c3d4e5f6fo5vOmv2h0Rb0dykHk9PD3mvob2EJFbz4cg2tuBF",
+            "XAPIKeySDK": "0f355811ee3bc1e22f9dd7a5a121d73b19cb7b0af05a4a225e783a86766eb683",
+            "OAUTHKey": "CD%3Wgdrtx7zZ1fLNbXZq#S@RTYij9hP",
+            "DecryptionKey": "33DEk7$BM3f0!Sv&QSsX9L@VDEk7$BM3",
+            "LocalHash": "Ezlui6sP4aIqvfWuJHH5f1Pma4mfIP2S+HklTXi3DI8=",
+            "PPIM": "ppimsil",
+            "PTMS": "ptmsil"
+        }
+       
+    }
+}
+
+
