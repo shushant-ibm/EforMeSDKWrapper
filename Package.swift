@@ -50,9 +50,7 @@ let package = Package(
                 // Amplify
                 .product(name: "Amplify", package: "amplify-swift"),
 
-                // Razorpay
-                .product(name: "Razorpay", package: "razorpay-pod"),
-
+    
                 // Google Maps
                 .product(name: "GoogleMaps", package: "ios-maps-sdk")
             ],
