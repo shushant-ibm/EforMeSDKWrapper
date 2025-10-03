@@ -24,9 +24,6 @@ let package = Package(
         // Amplify
         .package(url: "https://github.com/aws-amplify/amplify-swift.git", exact: "2.51.1"),
 
-        // Razorpay
-        .package(url: "https://github.com/razorpay/razorpay-pod", exact: "1.4.5"),
-
         // Google Maps
         .package(url: "https://github.com/googlemaps/ios-maps-sdk.git", exact: "9.0.0")
     ],
