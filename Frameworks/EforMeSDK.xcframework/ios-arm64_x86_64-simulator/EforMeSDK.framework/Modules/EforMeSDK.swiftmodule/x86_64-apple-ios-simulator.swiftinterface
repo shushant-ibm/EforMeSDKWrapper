@@ -2,17 +2,86 @@
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name EforMeSDK
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import EVConfiguration
+import EVContract
+import EforMe
 import Foundation
 import Swift
-import SwiftUI
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_Concurrency.MainActor @preconcurrency public struct LaunchEforMeSDK : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init()
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+@_hasMissingDesignatedInitializers final public class EforMeLaunch {
+  public static let shared: EforMeSDK.EforMeLaunch
+  final public func initialize(application: UIKit.UIApplication, config: EforMeSDK.EformeClientConfig? = nil)
+  final public func registerSessionHandler(handler: (any EforMeSDK.EformeSessionHandler)?)
+  final public func openEforMeJourney(journey: EforMeSDK.EforMeJourney)
+  final public func handleNotificationPayload(payloadJson: Swift.String)
+  final public func configureAep(ecid: Swift.String?, hashedPhone: Swift.String?, siteSection: Swift.String?)
+  @objc deinit
+}
+public enum EforMeEnvironment {
+  case production, staging, development
+  public static func == (a: EforMeSDK.EforMeEnvironment, b: EforMeSDK.EforMeEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s9EforMeSDK06LaunchabC0V4bodyQrvp", 0) __
 }
-extension EforMeSDK.LaunchEforMeSDK : Swift.Sendable {}
+public enum EforMeJourney {
+  case launchApp
+  case bookingHistory
+  case homeCharger
+  case myTrips
+  case chargingHistory
+  case chargingPreferences
+  case myAccount
+  case viewUpcomingBooking(bookingId: Swift.String)
+  case viewUpcomingTrip(tripId: Swift.String)
+  case viewChargingSession(cpoId: Swift.String, chargingStationId: Swift.String, sessionId: Swift.String, partyId: Swift.String? = nil)
+}
+@_hasMissingDesignatedInitializers final public class EformeSdkManager {
+  public static let shared: EforMeSDK.EformeSdkManager
+  @discardableResult
+  final public func initialize(application: UIKit.UIApplication, environment: EforMeSDK.EforMeEnvironment = .development, enableLogging: Swift.Bool = false, googleApiKey: Swift.String) -> EforMeSDK.EformeSdkInitializationResult
+  final public func registerSessionHandler(_ handler: (any EforMeSDK.EformeSessionHandler)?)
+  final public func openJourney(_ journey: EforMeSDK.EforMeJourney)
+  final public func handleNotificationPayload(_ payloadJson: Swift.String)
+  final public func configureAep(ecid: Swift.String?, hashedPhone: Swift.String?, siteSection: Swift.String?)
+  final public func notifyExit(message: Swift.String?, reason: EVConfiguration.ExitReason)
+  final public func notifySessionExpired()
+  final public func getToken() async -> Swift.String?
+  @objc deinit
+}
+public enum EformeSdkInitializationResult {
+  case success
+  case failure(any Swift.Error)
+}
+public protocol EformeSessionHandler : AnyObject {
+  func getAccessToken() async -> Swift.String?
+  func onLogout()
+  func notifyExit(reason: Swift.String, message: Swift.String?)
+}
+public protocol EforMeCoreContract {
+  func initialize(application: UIKit.UIApplication, config: EforMeSDK.EformeClientConfig?)
+  func registerSessionHandler(_ handler: (any EforMeSDK.EformeSessionHandler)?)
+  func openEforMeJourney(_ journey: EforMeSDK.EforMeJourney)
+  func handleNotificationPayload(_ payloadJson: Swift.String)
+  func configureAep(ecid: Swift.String?, hashedPhone: Swift.String?, siteSection: Swift.String?)
+}
+public struct EformeClientConfig {
+  public var isDebug: Swift.Bool
+  public var environment: EforMeSDK.EforMeEnvironment
+  public var googleApiKey: Swift.String
+  public init(isDebug: Swift.Bool = false, environment: EforMeSDK.EforMeEnvironment = .production, googleApiKey: Swift.String = "PROVIDE_GOOGLE_API_KEKY")
+}
+@_hasMissingDesignatedInitializers final public class EforMeCoreImpl : EforMeSDK.EforMeCoreContract {
+  final public func initialize(application: UIKit.UIApplication, config: EforMeSDK.EformeClientConfig? = EformeClientConfig())
+  final public func registerSessionHandler(_ handler: (any EforMeSDK.EformeSessionHandler)?)
+  final public func openEforMeJourney(_ journey: EforMeSDK.EforMeJourney)
+  final public func handleNotificationPayload(_ payloadJson: Swift.String)
+  final public func configureAep(ecid: Swift.String?, hashedPhone: Swift.String?, siteSection: Swift.String?)
+  @objc deinit
+}
+extension EforMeSDK.EforMeEnvironment : Swift.Equatable {}
+extension EforMeSDK.EforMeEnvironment : Swift.Hashable {}

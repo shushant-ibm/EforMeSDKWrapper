@@ -9,84 +9,46 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "EforMeSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
         "moduleName": "EforMeSDK"
       },
       {
         "kind": "Import",
-        "name": "EforMe",
-        "printedName": "EforMe",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "EforMeSDK",
-        "declAttributes": [
-          "AccessControl"
-        ]
+        "moduleName": "EforMeSDK"
       },
       {
         "kind": "TypeDecl",
-        "name": "LaunchEforMeSDK",
-        "printedName": "LaunchEforMeSDK",
+        "name": "EforMeLaunch",
+        "printedName": "EforMeLaunch",
         "children": [
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LaunchEforMeSDK",
-                "printedName": "EforMeSDK.LaunchEforMeSDK",
-                "usr": "s:9EforMeSDK06LaunchabC0V"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:9EforMeSDK06LaunchabC0VACycfc",
-            "mangledName": "$s9EforMeSDK06LaunchabC0VACycfc",
-            "moduleName": "EforMeSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Var",
-            "name": "body",
-            "printedName": "body",
+            "name": "shared",
+            "printedName": "shared",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
+                "name": "EforMeLaunch",
+                "printedName": "EforMeSDK.EforMeLaunch",
+                "usr": "s:9EforMeSDK0aB6LaunchC"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9EforMeSDK06LaunchabC0V4bodyQrvp",
-            "mangledName": "$s9EforMeSDK06LaunchabC0V4bodyQrvp",
+            "usr": "s:9EforMeSDK0aB6LaunchC6sharedACvpZ",
+            "mangledName": "$s9EforMeSDK0aB6LaunchC6sharedACvpZ",
             "moduleName": "EforMeSDK",
+            "static": true,
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
             ],
+            "isLet": true,
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -95,34 +57,463 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
+                    "name": "EforMeLaunch",
+                    "printedName": "EforMeSDK.EforMeLaunch",
+                    "usr": "s:9EforMeSDK0aB6LaunchC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9EforMeSDK06LaunchabC0V4bodyQrvg",
-                "mangledName": "$s9EforMeSDK06LaunchabC0V4bodyQrvg",
+                "usr": "s:9EforMeSDK0aB6LaunchC6sharedACvgZ",
+                "mangledName": "$s9EforMeSDK0aB6LaunchC6sharedACvgZ",
                 "moduleName": "EforMeSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(application:config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EforMeSDK.EformeClientConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EformeClientConfig",
+                    "printedName": "EforMeSDK.EformeClientConfig",
+                    "usr": "s:9EforMeSDK18EformeClientConfigV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB6LaunchC10initialize11application6configySo13UIApplicationC_AA18EformeClientConfigVSgtF",
+            "mangledName": "$s9EforMeSDK0aB6LaunchC10initialize11application6configySo13UIApplicationC_AA18EformeClientConfigVSgtF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerSessionHandler",
+            "printedName": "registerSessionHandler(handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any EforMeSDK.EformeSessionHandler)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EformeSessionHandler",
+                    "printedName": "any EforMeSDK.EformeSessionHandler",
+                    "usr": "s:9EforMeSDK20EformeSessionHandlerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB6LaunchC22registerSessionHandler7handleryAA06EformefG0_pSg_tF",
+            "mangledName": "$s9EforMeSDK0aB6LaunchC22registerSessionHandler7handleryAA06EformefG0_pSg_tF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openEforMeJourney",
+            "printedName": "openEforMeJourney(journey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EforMeJourney",
+                "printedName": "EforMeSDK.EforMeJourney",
+                "usr": "s:9EforMeSDK0aB7JourneyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB6LaunchC04openaB7Journey7journeyyAA0abF0O_tF",
+            "mangledName": "$s9EforMeSDK0aB6LaunchC04openaB7Journey7journeyyAA0abF0O_tF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleNotificationPayload",
+            "printedName": "handleNotificationPayload(payloadJson:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB6LaunchC25handleNotificationPayload11payloadJsonySS_tF",
+            "mangledName": "$s9EforMeSDK0aB6LaunchC25handleNotificationPayload11payloadJsonySS_tF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureAep",
+            "printedName": "configureAep(ecid:hashedPhone:siteSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB6LaunchC12configureAep4ecid11hashedPhone11siteSectionySSSg_A2HtF",
+            "mangledName": "$s9EforMeSDK0aB6LaunchC12configureAep4ecid11hashedPhone11siteSectionySSSg_A2HtF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:9EforMeSDK06LaunchabC0V",
-        "mangledName": "$s9EforMeSDK06LaunchabC0V",
+        "declKind": "Class",
+        "usr": "s:9EforMeSDK0aB6LaunchC",
+        "mangledName": "$s9EforMeSDK0aB6LaunchC",
         "moduleName": "EforMeSDK",
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EforMeEnvironment",
+        "printedName": "EforMeEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeEnvironment.Type) -> EforMeSDK.EforMeEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeEnvironment",
+                    "printedName": "EforMeSDK.EforMeEnvironment",
+                    "usr": "s:9EforMeSDK0aB11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeEnvironment",
+                        "printedName": "EforMeSDK.EforMeEnvironment",
+                        "usr": "s:9EforMeSDK0aB11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB11EnvironmentO10productionyA2CmF",
+            "mangledName": "$s9EforMeSDK0aB11EnvironmentO10productionyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "staging",
+            "printedName": "staging",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeEnvironment.Type) -> EforMeSDK.EforMeEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeEnvironment",
+                    "printedName": "EforMeSDK.EforMeEnvironment",
+                    "usr": "s:9EforMeSDK0aB11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeEnvironment",
+                        "printedName": "EforMeSDK.EforMeEnvironment",
+                        "usr": "s:9EforMeSDK0aB11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB11EnvironmentO7stagingyA2CmF",
+            "mangledName": "$s9EforMeSDK0aB11EnvironmentO7stagingyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "development",
+            "printedName": "development",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeEnvironment.Type) -> EforMeSDK.EforMeEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeEnvironment",
+                    "printedName": "EforMeSDK.EforMeEnvironment",
+                    "usr": "s:9EforMeSDK0aB11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeEnvironment",
+                        "printedName": "EforMeSDK.EforMeEnvironment",
+                        "usr": "s:9EforMeSDK0aB11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB11EnvironmentO11developmentyA2CmF",
+            "mangledName": "$s9EforMeSDK0aB11EnvironmentO11developmentyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EforMeEnvironment",
+                "printedName": "EforMeSDK.EforMeEnvironment",
+                "usr": "s:9EforMeSDK0aB11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EforMeEnvironment",
+                "printedName": "EforMeSDK.EforMeEnvironment",
+                "usr": "s:9EforMeSDK0aB11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB11EnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9EforMeSDK0aB11EnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "EforMeSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9EforMeSDK0aB11EnvironmentO9hashValueSivp",
+            "mangledName": "$s9EforMeSDK0aB11EnvironmentO9hashValueSivp",
+            "moduleName": "EforMeSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK0aB11EnvironmentO9hashValueSivg",
+                "mangledName": "$s9EforMeSDK0aB11EnvironmentO9hashValueSivg",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB11EnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s9EforMeSDK0aB11EnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "EforMeSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9EforMeSDK0aB11EnvironmentO",
+        "mangledName": "$s9EforMeSDK0aB11EnvironmentO",
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
           "AccessControl"
         ],
         "conformances": [
@@ -142,44 +533,2086 @@
           },
           {
             "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EforMeJourney",
+        "printedName": "EforMeJourney",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "launchApp",
+            "printedName": "launchApp",
             "children": [
               {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> EforMeSDK.EforMeJourney",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
+                    "name": "EforMeJourney",
+                    "printedName": "EforMeSDK.EforMeJourney",
+                    "usr": "s:9EforMeSDK0aB7JourneyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
                       }
                     ]
                   }
                 ]
               }
             ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO9launchAppyA2CmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO9launchAppyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "bookingHistory",
+            "printedName": "bookingHistory",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> EforMeSDK.EforMeJourney",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeJourney",
+                    "printedName": "EforMeSDK.EforMeJourney",
+                    "usr": "s:9EforMeSDK0aB7JourneyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO14bookingHistoryyA2CmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO14bookingHistoryyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "homeCharger",
+            "printedName": "homeCharger",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> EforMeSDK.EforMeJourney",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeJourney",
+                    "printedName": "EforMeSDK.EforMeJourney",
+                    "usr": "s:9EforMeSDK0aB7JourneyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO11homeChargeryA2CmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO11homeChargeryA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "myTrips",
+            "printedName": "myTrips",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> EforMeSDK.EforMeJourney",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeJourney",
+                    "printedName": "EforMeSDK.EforMeJourney",
+                    "usr": "s:9EforMeSDK0aB7JourneyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO7myTripsyA2CmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO7myTripsyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "chargingHistory",
+            "printedName": "chargingHistory",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> EforMeSDK.EforMeJourney",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeJourney",
+                    "printedName": "EforMeSDK.EforMeJourney",
+                    "usr": "s:9EforMeSDK0aB7JourneyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO15chargingHistoryyA2CmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO15chargingHistoryyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "chargingPreferences",
+            "printedName": "chargingPreferences",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> EforMeSDK.EforMeJourney",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeJourney",
+                    "printedName": "EforMeSDK.EforMeJourney",
+                    "usr": "s:9EforMeSDK0aB7JourneyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO19chargingPreferencesyA2CmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO19chargingPreferencesyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "myAccount",
+            "printedName": "myAccount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> EforMeSDK.EforMeJourney",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeJourney",
+                    "printedName": "EforMeSDK.EforMeJourney",
+                    "usr": "s:9EforMeSDK0aB7JourneyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO9myAccountyA2CmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO9myAccountyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "viewUpcomingBooking",
+            "printedName": "viewUpcomingBooking",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> (Swift.String) -> EforMeSDK.EforMeJourney",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> EforMeSDK.EforMeJourney",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(bookingId: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO19viewUpcomingBookingyACSS_tcACmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO19viewUpcomingBookingyACSS_tcACmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "viewUpcomingTrip",
+            "printedName": "viewUpcomingTrip",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> (Swift.String) -> EforMeSDK.EforMeJourney",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> EforMeSDK.EforMeJourney",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(tripId: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO16viewUpcomingTripyACSS_tcACmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO16viewUpcomingTripyACSS_tcACmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "viewChargingSession",
+            "printedName": "viewChargingSession",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EforMeJourney.Type) -> (Swift.String, Swift.String, Swift.String, Swift.String?) -> EforMeSDK.EforMeJourney",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String?) -> EforMeSDK.EforMeJourney",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(cpoId: Swift.String, chargingStationId: Swift.String, sessionId: Swift.String, partyId: Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EforMeJourney.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EforMeJourney",
+                        "printedName": "EforMeSDK.EforMeJourney",
+                        "usr": "s:9EforMeSDK0aB7JourneyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK0aB7JourneyO19viewChargingSessionyACSS_S3SSgtcACmF",
+            "mangledName": "$s9EforMeSDK0aB7JourneyO19viewChargingSessionyACSS_S3SSgtcACmF",
+            "moduleName": "EforMeSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9EforMeSDK0aB7JourneyO",
+        "mangledName": "$s9EforMeSDK0aB7JourneyO",
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EforMe",
+        "printedName": "EforMe",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EVContract",
+        "printedName": "EVContract",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EVConfiguration",
+        "printedName": "EVConfiguration",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EformeSdkManager",
+        "printedName": "EformeSdkManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EformeSdkManager",
+                "printedName": "EforMeSDK.EformeSdkManager",
+                "usr": "s:9EforMeSDK16EformeSdkManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC6sharedACvpZ",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC6sharedACvpZ",
+            "moduleName": "EforMeSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EformeSdkManager",
+                    "printedName": "EforMeSDK.EformeSdkManager",
+                    "usr": "s:9EforMeSDK16EformeSdkManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK16EformeSdkManagerC6sharedACvgZ",
+                "mangledName": "$s9EforMeSDK16EformeSdkManagerC6sharedACvgZ",
+                "moduleName": "EforMeSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(application:environment:enableLogging:googleApiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EformeSdkInitializationResult",
+                "printedName": "EforMeSDK.EformeSdkInitializationResult",
+                "usr": "s:9EforMeSDK29EformeSdkInitializationResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EforMeEnvironment",
+                "printedName": "EforMeSDK.EforMeEnvironment",
+                "hasDefaultArg": true,
+                "usr": "s:9EforMeSDK0aB11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC10initialize11application11environment13enableLogging12googleApiKeyAA0dE20InitializationResultOSo13UIApplicationC_AA0aB11EnvironmentOSbSStF",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC10initialize11application11environment13enableLogging12googleApiKeyAA0dE20InitializationResultOSo13UIApplicationC_AA0aB11EnvironmentOSbSStF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerSessionHandler",
+            "printedName": "registerSessionHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any EforMeSDK.EformeSessionHandler)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EformeSessionHandler",
+                    "printedName": "any EforMeSDK.EformeSessionHandler",
+                    "usr": "s:9EforMeSDK20EformeSessionHandlerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC22registerSessionHandleryyAA0dhI0_pSgF",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC22registerSessionHandleryyAA0dhI0_pSgF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openJourney",
+            "printedName": "openJourney(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EforMeJourney",
+                "printedName": "EforMeSDK.EforMeJourney",
+                "usr": "s:9EforMeSDK0aB7JourneyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC11openJourneyyyAA0abH0OF",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC11openJourneyyyAA0abH0OF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleNotificationPayload",
+            "printedName": "handleNotificationPayload(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC25handleNotificationPayloadyySSF",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC25handleNotificationPayloadyySSF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureAep",
+            "printedName": "configureAep(ecid:hashedPhone:siteSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC12configureAep4ecid11hashedPhone11siteSectionySSSg_A2HtF",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC12configureAep4ecid11hashedPhone11siteSectionySSSg_A2HtF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifyExit",
+            "printedName": "notifyExit(message:reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExitReason",
+                "printedName": "EVConfiguration.ExitReason",
+                "usr": "s:15EVConfiguration10ExitReasonO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC10notifyExit7message6reasonySSSg_15EVConfiguration0H6ReasonOtF",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC10notifyExit7message6reasonySSSg_15EVConfiguration0H6ReasonOtF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifySessionExpired",
+            "printedName": "notifySessionExpired()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC20notifySessionExpiredyyF",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC20notifySessionExpiredyyF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC8getTokenSSSgyYaF",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC8getTokenSSSgyYaF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9EforMeSDK16EformeSdkManagerC",
+        "mangledName": "$s9EforMeSDK16EformeSdkManagerC",
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EformeSdkInitializationResult",
+        "printedName": "EformeSdkInitializationResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EformeSdkInitializationResult.Type) -> EforMeSDK.EformeSdkInitializationResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EformeSdkInitializationResult",
+                    "printedName": "EforMeSDK.EformeSdkInitializationResult",
+                    "usr": "s:9EforMeSDK29EformeSdkInitializationResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EformeSdkInitializationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EformeSdkInitializationResult",
+                        "printedName": "EforMeSDK.EformeSdkInitializationResult",
+                        "usr": "s:9EforMeSDK29EformeSdkInitializationResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK29EformeSdkInitializationResultO7successyA2CmF",
+            "mangledName": "$s9EforMeSDK29EformeSdkInitializationResultO7successyA2CmF",
+            "moduleName": "EforMeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EforMeSDK.EformeSdkInitializationResult.Type) -> (any Swift.Error) -> EforMeSDK.EformeSdkInitializationResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> EforMeSDK.EformeSdkInitializationResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EformeSdkInitializationResult",
+                        "printedName": "EforMeSDK.EformeSdkInitializationResult",
+                        "usr": "s:9EforMeSDK29EformeSdkInitializationResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EforMeSDK.EformeSdkInitializationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EformeSdkInitializationResult",
+                        "printedName": "EforMeSDK.EformeSdkInitializationResult",
+                        "usr": "s:9EforMeSDK29EformeSdkInitializationResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9EforMeSDK29EformeSdkInitializationResultO7failureyACs5Error_pcACmF",
+            "mangledName": "$s9EforMeSDK29EformeSdkInitializationResultO7failureyACs5Error_pcACmF",
+            "moduleName": "EforMeSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9EforMeSDK29EformeSdkInitializationResultO",
+        "mangledName": "$s9EforMeSDK29EformeSdkInitializationResultO",
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EformeSessionHandler",
+        "printedName": "EformeSessionHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getAccessToken",
+            "printedName": "getAccessToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK20EformeSessionHandlerP14getAccessTokenSSSgyYaF",
+            "mangledName": "$s9EforMeSDK20EformeSessionHandlerP14getAccessTokenSSSgyYaF",
+            "moduleName": "EforMeSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EforMeSDK.EformeSessionHandler>",
+            "sugared_genericSig": "<Self where Self : EforMeSDK.EformeSessionHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLogout",
+            "printedName": "onLogout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK20EformeSessionHandlerP8onLogoutyyF",
+            "mangledName": "$s9EforMeSDK20EformeSessionHandlerP8onLogoutyyF",
+            "moduleName": "EforMeSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EforMeSDK.EformeSessionHandler>",
+            "sugared_genericSig": "<Self where Self : EforMeSDK.EformeSessionHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifyExit",
+            "printedName": "notifyExit(reason:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK20EformeSessionHandlerP10notifyExit6reason7messageySS_SSSgtF",
+            "mangledName": "$s9EforMeSDK20EformeSessionHandlerP10notifyExit6reason7messageySS_SSSgtF",
+            "moduleName": "EforMeSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EforMeSDK.EformeSessionHandler>",
+            "sugared_genericSig": "<Self where Self : EforMeSDK.EformeSessionHandler>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9EforMeSDK20EformeSessionHandlerP",
+        "mangledName": "$s9EforMeSDK20EformeSessionHandlerP",
+        "moduleName": "EforMeSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EforMeCoreContract",
+        "printedName": "EforMeCoreContract",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(application:config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EforMeSDK.EformeClientConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EformeClientConfig",
+                    "printedName": "EforMeSDK.EformeClientConfig",
+                    "usr": "s:9EforMeSDK18EformeClientConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB12CoreContractP10initialize11application6configySo13UIApplicationC_AA18EformeClientConfigVSgtF",
+            "mangledName": "$s9EforMeSDK0aB12CoreContractP10initialize11application6configySo13UIApplicationC_AA18EformeClientConfigVSgtF",
+            "moduleName": "EforMeSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EforMeSDK.EforMeCoreContract>",
+            "sugared_genericSig": "<Self where Self : EforMeSDK.EforMeCoreContract>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerSessionHandler",
+            "printedName": "registerSessionHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any EforMeSDK.EformeSessionHandler)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EformeSessionHandler",
+                    "printedName": "any EforMeSDK.EformeSessionHandler",
+                    "usr": "s:9EforMeSDK20EformeSessionHandlerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB12CoreContractP22registerSessionHandleryyAA06EformegH0_pSgF",
+            "mangledName": "$s9EforMeSDK0aB12CoreContractP22registerSessionHandleryyAA06EformegH0_pSgF",
+            "moduleName": "EforMeSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EforMeSDK.EforMeCoreContract>",
+            "sugared_genericSig": "<Self where Self : EforMeSDK.EforMeCoreContract>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openEforMeJourney",
+            "printedName": "openEforMeJourney(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EforMeJourney",
+                "printedName": "EforMeSDK.EforMeJourney",
+                "usr": "s:9EforMeSDK0aB7JourneyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB12CoreContractP04openaB7JourneyyyAA0abG0OF",
+            "mangledName": "$s9EforMeSDK0aB12CoreContractP04openaB7JourneyyyAA0abG0OF",
+            "moduleName": "EforMeSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EforMeSDK.EforMeCoreContract>",
+            "sugared_genericSig": "<Self where Self : EforMeSDK.EforMeCoreContract>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleNotificationPayload",
+            "printedName": "handleNotificationPayload(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB12CoreContractP25handleNotificationPayloadyySSF",
+            "mangledName": "$s9EforMeSDK0aB12CoreContractP25handleNotificationPayloadyySSF",
+            "moduleName": "EforMeSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EforMeSDK.EforMeCoreContract>",
+            "sugared_genericSig": "<Self where Self : EforMeSDK.EforMeCoreContract>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureAep",
+            "printedName": "configureAep(ecid:hashedPhone:siteSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB12CoreContractP12configureAep4ecid11hashedPhone11siteSectionySSSg_A2HtF",
+            "mangledName": "$s9EforMeSDK0aB12CoreContractP12configureAep4ecid11hashedPhone11siteSectionySSSg_A2HtF",
+            "moduleName": "EforMeSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EforMeSDK.EforMeCoreContract>",
+            "sugared_genericSig": "<Self where Self : EforMeSDK.EforMeCoreContract>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9EforMeSDK0aB12CoreContractP",
+        "mangledName": "$s9EforMeSDK0aB12CoreContractP",
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EformeClientConfig",
+        "printedName": "EformeClientConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isDebug",
+            "printedName": "isDebug",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9EforMeSDK18EformeClientConfigV7isDebugSbvp",
+            "mangledName": "$s9EforMeSDK18EformeClientConfigV7isDebugSbvp",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK18EformeClientConfigV7isDebugSbvg",
+                "mangledName": "$s9EforMeSDK18EformeClientConfigV7isDebugSbvg",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK18EformeClientConfigV7isDebugSbvs",
+                "mangledName": "$s9EforMeSDK18EformeClientConfigV7isDebugSbvs",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK18EformeClientConfigV7isDebugSbvM",
+                "mangledName": "$s9EforMeSDK18EformeClientConfigV7isDebugSbvM",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "environment",
+            "printedName": "environment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EforMeEnvironment",
+                "printedName": "EforMeSDK.EforMeEnvironment",
+                "usr": "s:9EforMeSDK0aB11EnvironmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9EforMeSDK18EformeClientConfigV11environmentAA0aB11EnvironmentOvp",
+            "mangledName": "$s9EforMeSDK18EformeClientConfigV11environmentAA0aB11EnvironmentOvp",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeEnvironment",
+                    "printedName": "EforMeSDK.EforMeEnvironment",
+                    "usr": "s:9EforMeSDK0aB11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK18EformeClientConfigV11environmentAA0aB11EnvironmentOvg",
+                "mangledName": "$s9EforMeSDK18EformeClientConfigV11environmentAA0aB11EnvironmentOvg",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EforMeEnvironment",
+                    "printedName": "EforMeSDK.EforMeEnvironment",
+                    "usr": "s:9EforMeSDK0aB11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK18EformeClientConfigV11environmentAA0aB11EnvironmentOvs",
+                "mangledName": "$s9EforMeSDK18EformeClientConfigV11environmentAA0aB11EnvironmentOvs",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK18EformeClientConfigV11environmentAA0aB11EnvironmentOvM",
+                "mangledName": "$s9EforMeSDK18EformeClientConfigV11environmentAA0aB11EnvironmentOvM",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "googleApiKey",
+            "printedName": "googleApiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9EforMeSDK18EformeClientConfigV12googleApiKeySSvp",
+            "mangledName": "$s9EforMeSDK18EformeClientConfigV12googleApiKeySSvp",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK18EformeClientConfigV12googleApiKeySSvg",
+                "mangledName": "$s9EforMeSDK18EformeClientConfigV12googleApiKeySSvg",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK18EformeClientConfigV12googleApiKeySSvs",
+                "mangledName": "$s9EforMeSDK18EformeClientConfigV12googleApiKeySSvs",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EforMeSDK18EformeClientConfigV12googleApiKeySSvM",
+                "mangledName": "$s9EforMeSDK18EformeClientConfigV12googleApiKeySSvM",
+                "moduleName": "EforMeSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isDebug:environment:googleApiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EformeClientConfig",
+                "printedName": "EforMeSDK.EformeClientConfig",
+                "usr": "s:9EforMeSDK18EformeClientConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EforMeEnvironment",
+                "printedName": "EforMeSDK.EforMeEnvironment",
+                "hasDefaultArg": true,
+                "usr": "s:9EforMeSDK0aB11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9EforMeSDK18EformeClientConfigV7isDebug11environment12googleApiKeyACSb_AA0aB11EnvironmentOSStcfc",
+            "mangledName": "$s9EforMeSDK18EformeClientConfigV7isDebug11environment12googleApiKeyACSb_AA0aB11EnvironmentOSStcfc",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9EforMeSDK18EformeClientConfigV",
+        "mangledName": "$s9EforMeSDK18EformeClientConfigV",
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EforMeCoreImpl",
+        "printedName": "EforMeCoreImpl",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(application:config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EforMeSDK.EformeClientConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EformeClientConfig",
+                    "printedName": "EforMeSDK.EformeClientConfig",
+                    "usr": "s:9EforMeSDK18EformeClientConfigV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB8CoreImplC10initialize11application6configySo13UIApplicationC_AA18EformeClientConfigVSgtF",
+            "mangledName": "$s9EforMeSDK0aB8CoreImplC10initialize11application6configySo13UIApplicationC_AA18EformeClientConfigVSgtF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerSessionHandler",
+            "printedName": "registerSessionHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any EforMeSDK.EformeSessionHandler)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EformeSessionHandler",
+                    "printedName": "any EforMeSDK.EformeSessionHandler",
+                    "usr": "s:9EforMeSDK20EformeSessionHandlerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB8CoreImplC22registerSessionHandleryyAA06EformegH0_pSgF",
+            "mangledName": "$s9EforMeSDK0aB8CoreImplC22registerSessionHandleryyAA06EformegH0_pSgF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openEforMeJourney",
+            "printedName": "openEforMeJourney(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EforMeJourney",
+                "printedName": "EforMeSDK.EforMeJourney",
+                "usr": "s:9EforMeSDK0aB7JourneyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB8CoreImplC04openaB7JourneyyyAA0abG0OF",
+            "mangledName": "$s9EforMeSDK0aB8CoreImplC04openaB7JourneyyyAA0abG0OF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleNotificationPayload",
+            "printedName": "handleNotificationPayload(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB8CoreImplC25handleNotificationPayloadyySSF",
+            "mangledName": "$s9EforMeSDK0aB8CoreImplC25handleNotificationPayloadyySSF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureAep",
+            "printedName": "configureAep(ecid:hashedPhone:siteSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9EforMeSDK0aB8CoreImplC12configureAep4ecid11hashedPhone11siteSectionySSSg_A2HtF",
+            "mangledName": "$s9EforMeSDK0aB8CoreImplC12configureAep4ecid11hashedPhone11siteSectionySSSg_A2HtF",
+            "moduleName": "EforMeSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9EforMeSDK0aB8CoreImplC",
+        "mangledName": "$s9EforMeSDK0aB8CoreImplC",
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EforMeCoreContract",
+            "printedName": "EforMeCoreContract",
+            "usr": "s:9EforMeSDK0aB12CoreContractP",
+            "mangledName": "$s9EforMeSDK0aB12CoreContractP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EVConfiguration",
+        "printedName": "EVConfiguration",
+        "declKind": "Import",
+        "moduleName": "EforMeSDK"
       }
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EformeSdkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 425,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EformeSdkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 525,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EformeSdkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 825,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EformeClientConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 182,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EformeClientConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 25,
+      "value": "\"PROVIDE_GOOGLE_API_KEKY\""
+    },
+    {
+      "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EforMeCoreImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 116,
+      "length": 16,
+      "value": "\"EforMeCoreImpl\""
+    },
+    {
+      "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EforMeCoreImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 220,
+      "length": 5,
+      "value": "false"
+    }
+  ]
 }

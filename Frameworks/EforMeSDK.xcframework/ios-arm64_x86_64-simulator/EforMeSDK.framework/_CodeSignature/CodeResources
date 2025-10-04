@@ -4,264 +4,121 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>EforMeAssets.bundle/AppConfig.json</key>
-		<data>
-		aOHvw5+KASp228JVn+/JotSyHv8=
-		</data>
-		<key>EforMeAssets.bundle/Assets.car</key>
-		<data>
-		NS0xlKPCxOcKyqYRKKp/yLNUj28=
-		</data>
-		<key>EforMeAssets.bundle/Info.plist</key>
-		<data>
-		kzg2CvK79hlVdNwyTXTUW3q6mDQ=
-		</data>
-		<key>EforMeAssets.bundle/Roboto-Bold.ttf</key>
-		<data>
-		YkQqGKn+lFfBr+q/aD0mOmkbd5g=
-		</data>
-		<key>EforMeAssets.bundle/Roboto-Light.ttf</key>
-		<data>
-		GHiMXWMPppX5KD9jk7+lQbIDFQg=
-		</data>
-		<key>EforMeAssets.bundle/Roboto-Regular.ttf</key>
-		<data>
-		VsXA04veTB8VSd2kPbN7CcYIqtM=
-		</data>
-		<key>EforMeAssets.bundle/Roboto-Thin.ttf</key>
-		<data>
-		WMcz4ivO6vlgnOV47KkqwwPG2S8=
-		</data>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeDirectory</key>
-		<data>
-		mPqPW9gjc5adJOKjppRNFyVp17c=
-		</data>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		x7oaLtm2tALZT16tvR5GZhH9cIs=
-		</data>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeResources</key>
-		<data>
-		iLJ+awAOXPm0EuqnB7V6zTjIyto=
-		</data>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
-		<key>EforMeAssets.bundle/startCharging_Gifanimation.gif</key>
-		<data>
-		WJKT8tNv547dsbFVjbZv+J6nWiI=
-		</data>
 		<key>Info.plist</key>
 		<data>
 		y+s9r/GpLkfTSnFNDwMEBCzz0Nc=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		K5fL3o6izlBauPbdbGWlG/K9Wh0=
+		xm+T5H6+6Jy3KEXyIG1+l5VQS3Y=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ihsHSXVcLimw+AB22EYLzqBHaM0=
+		JmOW7H+5GJiz4Kvt3Yo8+H4ROH8=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2Ae0t/ELbcqU5/LtxmJKYsub2wE=
+		egIxcomeY4rqIHUtDRp7FhTHgoo=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ihsHSXVcLimw+AB22EYLzqBHaM0=
+		JmOW7H+5GJiz4Kvt3Yo8+H4ROH8=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		f9d9HFJ8osT+YHGzq6PVt1zi3RA=
+		uZ5vLKMiC99lKtSjZ6rRjsENlCw=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		K5fL3o6izlBauPbdbGWlG/K9Wh0=
+		xm+T5H6+6Jy3KEXyIG1+l5VQS3Y=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		eTrOZrVGpIYJo3gD4OpmbD3IqMY=
+		3aEkHhjzisdXoNEjxP5tJrtpg5U=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QJfSG2ETXZLKD52l+GTVRejGNlk=
+		B1Lq/YuWo8fTVrtsasW9gUDr3k4=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eTrOZrVGpIYJo3gD4OpmbD3IqMY=
+		3aEkHhjzisdXoNEjxP5tJrtpg5U=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gZXB1ZnFad5EN+u3gGof6ELyDds=
+		B/s0Qtad1kLhSYf5+N+n2wwU8pU=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>EforMeAssets.bundle/AppConfig.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UA99l/Gkm4Se0sfPGGeffwSZ9RxmMV3CYlxO7rZJwE4=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sC4K1sPnGskrlRZcwCSFaXgYQJYa6bKjwlwf+cZk3Xw=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/t8TJpJYzdiHZot5ksGs9ee3A0+4ZUdwoNV4hPZyub8=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/Roboto-Bold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7GhaRhBSlv5GyHRNpKEc+BGLpsEScZQXZvelRt9qp8c=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/Roboto-Light.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xXbFBkInG82//+0E+S3I1qmB2vMAkU0KIMilpaVwFcc=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/Roboto-Regular.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ThR6tkuf322J0B9rjDygs83cWdYIqOIhj5olBLXJjhQ=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/Roboto-Thin.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZySPfoxu2zzn73Ow8ApTSn9CwRFs72POIbIDW16XmgY=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RRrfviadadBQiS+JJ6FCGD6l2afLYA9hsaFQ2Iat1sg=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zxHdRUDlX1Q0vioBO1Z8HpyFoAfvf7RdUfQOZu7ysyE=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DdkuTbzc9OWqp/KOc1u+IDIXJNuWYB6rFILVR3o8j74=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
-			</data>
-		</dict>
-		<key>EforMeAssets.bundle/startCharging_Gifanimation.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4UnxsMxTMBN3sQ1V0TJMm2AVbcVLNd5PGE7vwq1RhxI=
-			</data>
-		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d//kSVDts3/pjyGr+pZQ6P7PMkFszg9OrVVaFQ7qrxI=
+			1is4wiYgRDTuh4UqKW712XjZYtrBazomhlKRwHuMHgo=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EYfDl0Bnv48suUv2s5gNeOQoI73Py5jt8V62vxXYkDo=
+			GRHwVt3hR8bbuStfgya8fMk+3q5wgVcqIHRy3Tm0+HY=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+OB1A7tbygqp/HUcHsOzr/QiqJk0nqE8qPsseL3lJQ=
+			qbxR9KUISI47xfFRnX74AifRXarBhQlTmV9gztfgGUI=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EYfDl0Bnv48suUv2s5gNeOQoI73Py5jt8V62vxXYkDo=
+			GRHwVt3hR8bbuStfgya8fMk+3q5wgVcqIHRy3Tm0+HY=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TIjAnAaUOunD55P1Twuvj9tiQBQZXmpBzHZCKKJw0FM=
+			NmJPVW5vDKcOQsgpccEVWvajNS9Nibnn8BTLqbKRseI=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d//kSVDts3/pjyGr+pZQ6P7PMkFszg9OrVVaFQ7qrxI=
+			1is4wiYgRDTuh4UqKW712XjZYtrBazomhlKRwHuMHgo=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qUqATWg2zh4pMgDKN5Qj5IPA9thGGa1ilGFi4wy9yTE=
+			DzfQJK424Azxp27NflmYKjGSN6a/dPjZI+Mxz/FHHz4=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h7i+MNloeaTO1xbCzsn75WKE5+jQL8pOpY0L147JQHw=
+			ddlKQEYNkAEgdjdNiKBKpObG3aS8bX3atqrqbS71thQ=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qUqATWg2zh4pMgDKN5Qj5IPA9thGGa1ilGFi4wy9yTE=
+			DzfQJK424Azxp27NflmYKjGSN6a/dPjZI+Mxz/FHHz4=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tsH26Ye2BMi49C9P9WIjBDLWWsUaM82CKVajrGaYeNM=
+			I6/mV9Fjs87Bs033LSaeh3XlfRFTRnuxv8aeFd6LqU8=
 			</data>
 		</dict>
 	</dict>
