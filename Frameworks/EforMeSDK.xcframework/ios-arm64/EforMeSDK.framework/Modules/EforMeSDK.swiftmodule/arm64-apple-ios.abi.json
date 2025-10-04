@@ -1053,7 +1053,10 @@
         "name": "EforMe",
         "printedName": "EforMe",
         "declKind": "Import",
-        "moduleName": "EforMeSDK"
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -1067,14 +1070,20 @@
         "name": "EVContract",
         "printedName": "EVContract",
         "declKind": "Import",
-        "moduleName": "EforMeSDK"
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "EVConfiguration",
         "printedName": "EVConfiguration",
         "declKind": "Import",
-        "moduleName": "EforMeSDK"
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1363,14 +1372,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ExitReason",
-                "printedName": "EVConfiguration.ExitReason",
-                "usr": "s:15EVConfiguration10ExitReasonO"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9EforMeSDK16EformeSdkManagerC10notifyExit7message6reasonySSSg_15EVConfiguration0H6ReasonOtF",
-            "mangledName": "$s9EforMeSDK16EformeSdkManagerC10notifyExit7message6reasonySSSg_15EVConfiguration0H6ReasonOtF",
+            "usr": "s:9EforMeSDK16EformeSdkManagerC10notifyExit7message6reasonySSSg_SStF",
+            "mangledName": "$s9EforMeSDK16EformeSdkManagerC10notifyExit7message6reasonySSSg_SStF",
             "moduleName": "EforMeSDK",
             "declAttributes": [
               "Final",
@@ -2559,7 +2568,10 @@
         "name": "EVConfiguration",
         "printedName": "EVConfiguration",
         "declKind": "Import",
-        "moduleName": "EforMeSDK"
+        "moduleName": "EforMeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       }
     ],
     "json_format_version": 8
@@ -2568,21 +2580,21 @@
     {
       "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EformeSdkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 425,
+      "offset": 452,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EformeSdkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 525,
+      "offset": 552,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/charitar\/Desktop\/MSIL\/Codebase\/MSI_EV_Charging_Mobile_Application-iOS\/EVChargingPlatform\/EVChargingPlatform\/EforMeSDK\/EformeSdkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 825,
+      "offset": 852,
       "length": 5,
       "value": "false"
     },

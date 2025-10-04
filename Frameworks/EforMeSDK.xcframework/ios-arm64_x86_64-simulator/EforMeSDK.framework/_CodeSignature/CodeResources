@@ -10,11 +10,11 @@
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xm+T5H6+6Jy3KEXyIG1+l5VQS3Y=
+		Ll14Z0zR7ZnsV1DBpkhsNO4amPM=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		JmOW7H+5GJiz4Kvt3Yo8+H4ROH8=
+		JfKyg3QjoEoM7UeibOtSO4nnQGA=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JmOW7H+5GJiz4Kvt3Yo8+H4ROH8=
+		JfKyg3QjoEoM7UeibOtSO4nnQGA=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uZ5vLKMiC99lKtSjZ6rRjsENlCw=
+		1mE9YkV8USqZc8VQ+MODht0zfuM=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xm+T5H6+6Jy3KEXyIG1+l5VQS3Y=
+		Ll14Z0zR7ZnsV1DBpkhsNO4amPM=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3aEkHhjzisdXoNEjxP5tJrtpg5U=
+		Tf4mpia9RjdKt/5aaHa0JfPiFUU=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3aEkHhjzisdXoNEjxP5tJrtpg5U=
+		Tf4mpia9RjdKt/5aaHa0JfPiFUU=
 		</data>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		B/s0Qtad1kLhSYf5+N+n2wwU8pU=
+		8vMjwTlFu7+w/Jq3mXbMGTuuTL0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1is4wiYgRDTuh4UqKW712XjZYtrBazomhlKRwHuMHgo=
+			39PkJs4P8X8BsJQOVL3jH1rclphh/yE+/s66mPmpaYk=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GRHwVt3hR8bbuStfgya8fMk+3q5wgVcqIHRy3Tm0+HY=
+			cYuC5hJEtzofA7xLZtXbNIjMosduuEnDyFSIxMHQkKc=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GRHwVt3hR8bbuStfgya8fMk+3q5wgVcqIHRy3Tm0+HY=
+			cYuC5hJEtzofA7xLZtXbNIjMosduuEnDyFSIxMHQkKc=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NmJPVW5vDKcOQsgpccEVWvajNS9Nibnn8BTLqbKRseI=
+			MOwPf4NRA8BzyyOc7FY4XPKOsKFnJqt9YO2F3uAUsVo=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1is4wiYgRDTuh4UqKW712XjZYtrBazomhlKRwHuMHgo=
+			39PkJs4P8X8BsJQOVL3jH1rclphh/yE+/s66mPmpaYk=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DzfQJK424Azxp27NflmYKjGSN6a/dPjZI+Mxz/FHHz4=
+			qeejGHm5/D7zWwNbu0aaGLaRNn0VIxUJhqVdmvexf8w=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DzfQJK424Azxp27NflmYKjGSN6a/dPjZI+Mxz/FHHz4=
+			qeejGHm5/D7zWwNbu0aaGLaRNn0VIxUJhqVdmvexf8w=
 			</data>
 		</dict>
 		<key>Modules/EforMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I6/mV9Fjs87Bs033LSaeh3XlfRFTRnuxv8aeFd6LqU8=
+			rswaEghcF1xnDsRBEiJblflyfWlIbZIzvoC3McCN9SM=
 			</data>
 		</dict>
 	</dict>
